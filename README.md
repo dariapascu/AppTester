@@ -10,3 +10,8 @@ Script pentru testarea unei aplicații(timp de execuție, input-output, apeluri 
 -am organizat codul astfel incat sa fie mai usor de inteles si de utilizat
 -am realizat scrierea in fisiere de log a apelurilor de sistem si biblioteci pe care le-am obtinut la aplicarea filtrului black and white
 -am folosit ImageMagick pentru a testa si in cadrul scriptului daca imaginea rezultata la output este in alb si negru, pentru a nu fi nevoie sa se acceseze imaginea pentru verificarea rfezultatului
+
+# 20.06.2024
+-am realizat functia de redimensionare a imaginii care modifica dimensiunile imaginii cu cele specificate de utilizator, verifica daca modificarile s-au efectuat corespunzator, masoara timpul de executie al acestei operatii si inregistreaza apelurile de sistem si de biblioteci pe care le face aplicatia
+-am adaugat in meniu verificari pentru minimizarea erorilor umane
+-am inceput lucrul la o functie de rotire a imaginii conform datelor introduse de utilizator
