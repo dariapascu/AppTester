@@ -1,7 +1,7 @@
-execve("/usr/bin/gimp", ["gimp", "-i", "-b", "(let* (\n      (image (car (gimp-"...], 0x7ffc2a521e88 /* 55 vars */) = 0
+execve("/usr/bin/gimp", ["gimp", "-i", "-b", "(let* (\n      (image (car (gimp-"...], 0x7fff8a6bf6f8 /* 66 vars */) = 0
 access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
-newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgimpwidgets-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=637576, ...}, AT_EMPTY_PATH) = 0
@@ -217,8 +217,8 @@ read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832
 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=47472, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
 newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
-statfs("/sys/fs/selinux", 0x7ffc489a6940) = -1 ENOENT (No such file or directory)
-statfs("/selinux", 0x7ffc489a6940)      = -1 ENOENT (No such file or directory)
+statfs("/sys/fs/selinux", 0x7fff78c67a60) = -1 ENOENT (No such file or directory)
+statfs("/selinux", 0x7fff78c67a60)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
 newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
 read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbd"..., 1024) = 432
@@ -371,13 +371,13 @@ newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=14120, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/babl-0.1/HCY.so", O_RDONLY|O_CLOEXEC) = 4
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=18584, ...}, AT_EMPTY_PATH) = 0
-newfstatat(AT_FDCWD, "/home/daria/.cache/babl/babl-fishes", {st_mode=S_IFREG|0664, st_size=7805, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/daria/.cache/babl/babl-fishes", {st_mode=S_IFREG|0664, st_size=7973, ...}, 0) = 0
 openat(AT_FDCWD, "/home/daria/.cache/babl/babl-fishes", O_RDONLY) = 3
-newfstatat(3, "", {st_mode=S_IFREG|0664, st_size=7805, ...}, AT_EMPTY_PATH) = 0
-newfstatat(3, "", {st_mode=S_IFREG|0664, st_size=7805, ...}, AT_EMPTY_PATH) = 0
-read(3, "G'B'A u8 to R'G'B' u8\n----\nR'G'B"..., 3709) = 3709
+newfstatat(3, "", {st_mode=S_IFREG|0664, st_size=7973, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0664, st_size=7973, ...}, AT_EMPTY_PATH) = 0
+read(3, "'A u8\nRGBA float\n\tpixels=0 cost="..., 3877) = 3877
 read(3, "#BABL_0_1_90-10-gbefaba5 BABL_PA"..., 4096) = 4096
-read(3, "G'B'A u8 to R'G'B' u8\n----\nR'G'B"..., 4096) = 3709
+read(3, "'A u8\nRGBA float\n\tpixels=0 cost="..., 4096) = 3877
 newfstatat(AT_FDCWD, "/home/daria/.cache/gegl-0.4/swap", {st_mode=S_IFDIR|0700, st_size=4096, ...}, 0) = 0
 openat(AT_FDCWD, "/home/daria/.cache/gegl-0.4/swap", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
 newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
@@ -392,7 +392,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/ff-load.so", O_RDONLY|O_CLO
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=34960, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
-newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libavcodec.so.58", O_RDONLY|O_CLOEXEC) = 4
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=14886880, ...}, AT_EMPTY_PATH) = 0
@@ -630,23 +630,23 @@ newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=68552, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/proc/self/status", O_RDONLY) = 4
 newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
 read(4, "Name:\tgimp\nUmask:\t0002\nState:\tR "..., 1024) = 1024
-read(4, "owed_list:\t0-4\nMems_allowed:\t000"..., 1024) = 398
+read(4, "pus_allowed_list:\t0-4\nMems_allow"..., 1024) = 405
 openat(AT_FDCWD, "/sys/devices/system/node", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
 newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/sys/devices/system/node/node0/meminfo", O_RDONLY) = 5
 newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
-read(5, "Node 0 MemTotal:        3539068 "..., 4096) = 1208
+read(5, "Node 0 MemTotal:        3539064 "..., 4096) = 1208
 read(5, "", 4096)                       = 0
 openat(AT_FDCWD, "/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
 newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/proc/self/status", O_RDONLY) = 4
 newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
 read(4, "Name:\tgimp\nUmask:\t0002\nState:\tR "..., 1024) = 1024
-read(4, "owed_list:\t0-4\nMems_allowed:\t000"..., 1024) = 398
+read(4, "pus_allowed_list:\t0-4\nMems_allow"..., 1024) = 405
 read(4, "", 1024)                       = 0
 access("/etc/gcrypt/fips_enabled", F_OK) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/etc/gcrypt/hwf.deny", O_RDONLY) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/etc/gnutls/config", 0x7ffc489a56f0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/gnutls/config", 0x7fff78c66810, 0) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/share/locale/en_US/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/share/locale/en/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/share/locale-langpack/en_US/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
@@ -672,7 +672,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/raw-load.so", O_RDONLY|O_CL
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=26936, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
-newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libraw.so.20", O_RDONLY|O_CLOEXEC) = 4
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1077208, ...}, AT_EMPTY_PATH) = 0
@@ -682,7 +682,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/ff-save.so", O_RDONLY|O_CLO
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=39056, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
-newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libavcodec.so.58", O_RDONLY|O_CLOEXEC) = 4
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=14886880, ...}, AT_EMPTY_PATH) = 0
@@ -914,23 +914,23 @@ newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=68552, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/proc/self/status", O_RDONLY) = 4
 newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
 read(4, "Name:\tgimp\nUmask:\t0002\nState:\tR "..., 1024) = 1024
-read(4, "owed_list:\t0-4\nMems_allowed:\t000"..., 1024) = 398
+read(4, "pus_allowed_list:\t0-4\nMems_allow"..., 1024) = 405
 openat(AT_FDCWD, "/sys/devices/system/node", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
 newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/sys/devices/system/node/node0/meminfo", O_RDONLY) = 5
 newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
-read(5, "Node 0 MemTotal:        3539068 "..., 4096) = 1208
+read(5, "Node 0 MemTotal:        3539064 "..., 4096) = 1208
 read(5, "", 4096)                       = 0
 openat(AT_FDCWD, "/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
 newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/proc/self/status", O_RDONLY) = 4
 newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
 read(4, "Name:\tgimp\nUmask:\t0002\nState:\tR "..., 1024) = 1024
-read(4, "owed_list:\t0-4\nMems_allowed:\t000"..., 1024) = 398
+read(4, "pus_allowed_list:\t0-4\nMems_allow"..., 1024) = 405
 read(4, "", 1024)                       = 0
 access("/etc/gcrypt/fips_enabled", F_OK) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/etc/gcrypt/hwf.deny", O_RDONLY) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/etc/gnutls/config", 0x7ffc489a56f0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/gnutls/config", 0x7fff78c66810, 0) = -1 ENOENT (No such file or directory)
 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/rgbe-load.so", {st_mode=S_IFREG|0644, st_size=30944, ...}, 0) = 0
 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/rgbe-load.so", {st_mode=S_IFREG|0644, st_size=30944, ...}, 0) = 0
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/rgbe-load.so", O_RDONLY|O_CLOEXEC) = 4
@@ -947,7 +947,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/pdf-load.so", O_RDONLY|O_CL
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=26768, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
-newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpoppler-glib.so.8", O_RDONLY|O_CLOEXEC) = 4
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=415888, ...}, AT_EMPTY_PATH) = 0
@@ -999,7 +999,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/exr-load.so", O_RDONLY|O_CL
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=31040, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
-newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libIlmImf-2_5.so.25", O_RDONLY|O_CLOEXEC) = 4
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \0\3\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=2955704, ...}, AT_EMPTY_PATH) = 0
@@ -1031,7 +1031,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/webp-load.so", O_RDONLY|O_C
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=26768, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
-newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libwebp.so.7", O_RDONLY|O_CLOEXEC) = 4
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=432688, ...}, AT_EMPTY_PATH) = 0
@@ -1046,7 +1046,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/matting-levin.so", O_RDONLY
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=47248, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
-newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libumfpack.so.5", O_RDONLY|O_CLOEXEC) = 4
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=698840, ...}, AT_EMPTY_PATH) = 0
@@ -1083,7 +1083,7 @@ newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=2989432, ...}, AT_EMPTY_PATH) =
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libquadmath.so.0", O_RDONLY|O_CLOEXEC) = 4
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=289592, ...}, AT_EMPTY_PATH) = 0
-newfstatat(0, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+newfstatat(0, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x4), ...}, AT_EMPTY_PATH) = 0
 newfstatat(1, "", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}, AT_EMPTY_PATH) = 0
 newfstatat(2, "", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}, AT_EMPTY_PATH) = 0
 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/pixbuf-load.so", {st_mode=S_IFREG|0644, st_size=22672, ...}, 0) = 0
@@ -1122,7 +1122,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/svg-load.so", O_RDONLY|O_CL
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=26768, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
-newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/librsvg-2.so.2", O_RDONLY|O_CLOEXEC) = 4
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=10906912, ...}, AT_EMPTY_PATH) = 0
@@ -1203,7 +1203,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/seamless-clone.so", O_RDONL
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=26768, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
-newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgegl-sc-0.4.so", O_RDONLY|O_CLOEXEC) = 4
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=108688, ...}, AT_EMPTY_PATH) = 0
@@ -1223,7 +1223,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/exr-save.so", O_RDONLY|O_CL
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=31048, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
-newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libIlmImf-2_5.so.25", O_RDONLY|O_CLOEXEC) = 4
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \0\3\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=2955704, ...}, AT_EMPTY_PATH) = 0
@@ -1260,7 +1260,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/webp-save.so", O_RDONLY|O_C
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=26768, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
-newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libwebp.so.7", O_RDONLY|O_CLOEXEC) = 4
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=432688, ...}, AT_EMPTY_PATH) = 0
@@ -1270,7 +1270,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/tiff-save.so", O_RDONLY|O_C
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=35040, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
-newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtiff.so.5", O_RDONLY|O_CLOEXEC) = 4
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=546984, ...}, AT_EMPTY_PATH) = 0
@@ -1310,7 +1310,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/tiff-load.so", O_RDONLY|O_C
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=39136, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
-newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtiff.so.5", O_RDONLY|O_CLOEXEC) = 4
 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=546984, ...}, AT_EMPTY_PATH) = 0
@@ -1356,21 +1356,21 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gio/modules/libgvfsdbus.so", O_RDONL
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=211448, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/glibc-hwcaps/x86-64-v2/libgvfscommon.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/glibc-hwcaps/x86-64-v2", 0x7ffc489a4e90, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/glibc-hwcaps/x86-64-v2", 0x7fff78c65fb0, 0) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/tls/x86_64/x86_64/libgvfscommon.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/tls/x86_64/x86_64", 0x7ffc489a4e90, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/tls/x86_64/x86_64", 0x7fff78c65fb0, 0) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/tls/x86_64/libgvfscommon.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/tls/x86_64", 0x7ffc489a4e90, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/tls/x86_64", 0x7fff78c65fb0, 0) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/tls/x86_64/libgvfscommon.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/tls/x86_64", 0x7ffc489a4e90, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/tls/x86_64", 0x7fff78c65fb0, 0) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/tls/libgvfscommon.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/tls", 0x7ffc489a4e90, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/tls", 0x7fff78c65fb0, 0) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/x86_64/x86_64/libgvfscommon.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/x86_64/x86_64", 0x7ffc489a4e90, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/x86_64/x86_64", 0x7fff78c65fb0, 0) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/x86_64/libgvfscommon.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/x86_64", 0x7ffc489a4e90, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/x86_64", 0x7fff78c65fb0, 0) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/x86_64/libgvfscommon.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/x86_64", 0x7ffc489a4e90, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/x86_64", 0x7fff78c65fb0, 0) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gvfs/libgvfscommon.so", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=268520, ...}, AT_EMPTY_PATH) = 0
@@ -1381,7 +1381,8 @@ write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
 write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
 write(7, "\1\0\0\0\0\0\0\0", 8)         = 8
 write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
-read(7, "\2\0\0\0\0\0\0\0", 16)         = 8
+read(7, "\1\0\0\0\0\0\0\0", 16)         = 8
+read(7, "\1\0\0\0\0\0\0\0", 16)         = 8
 write(7, "\1\0\0\0\0\0\0\0", 8)         = 8
 write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
 write(7, "\1\0\0\0\0\0\0\0", 8)         = 8
@@ -1438,7 +1439,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/ff-load.so", O_RDONLY|O_CLO
 read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=34960, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 7
-newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libavcodec.so.58", O_RDONLY|O_CLOEXEC) = 7
 read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=14886880, ...}, AT_EMPTY_PATH) = 0
@@ -1670,23 +1671,23 @@ newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=68552, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/proc/self/status", O_RDONLY) = 7
 newfstatat(7, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
 read(7, "Name:\tgimp\nUmask:\t0002\nState:\tR "..., 1024) = 1024
-read(7, "owed_list:\t0-4\nMems_allowed:\t000"..., 1024) = 399
+read(7, "pus_allowed_list:\t0-4\nMems_allow"..., 1024) = 406
 openat(AT_FDCWD, "/sys/devices/system/node", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
 newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/sys/devices/system/node/node0/meminfo", O_RDONLY) = 8
 newfstatat(8, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
-read(8, "Node 0 MemTotal:        3539068 "..., 4096) = 1208
+read(8, "Node 0 MemTotal:        3539064 "..., 4096) = 1208
 read(8, "", 4096)                       = 0
 openat(AT_FDCWD, "/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
 newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/proc/self/status", O_RDONLY) = 7
 newfstatat(7, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
 read(7, "Name:\tgimp\nUmask:\t0002\nState:\tR "..., 1024) = 1024
-read(7, "owed_list:\t0-4\nMems_allowed:\t000"..., 1024) = 399
+read(7, "pus_allowed_list:\t0-4\nMems_allow"..., 1024) = 406
 read(7, "", 1024)                       = 0
 access("/etc/gcrypt/fips_enabled", F_OK) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/etc/gcrypt/hwf.deny", O_RDONLY) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/etc/gnutls/config", 0x7ffc489a5700, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/gnutls/config", 0x7fff78c66820, 0) = -1 ENOENT (No such file or directory)
 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/jpg-load.so", {st_mode=S_IFREG|0644, st_size=26848, ...}, 0) = 0
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/jpg-load.so", O_RDONLY|O_CLOEXEC) = 7
 read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
@@ -1700,7 +1701,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/raw-load.so", O_RDONLY|O_CL
 read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=26936, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 7
-newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libraw.so.20", O_RDONLY|O_CLOEXEC) = 7
 read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=1077208, ...}, AT_EMPTY_PATH) = 0
@@ -1713,7 +1714,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/pdf-load.so", O_RDONLY|O_CL
 read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=26768, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 7
-newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpoppler-glib.so.8", O_RDONLY|O_CLOEXEC) = 7
 read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=415888, ...}, AT_EMPTY_PATH) = 0
@@ -1755,7 +1756,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/exr-load.so", O_RDONLY|O_CL
 read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=31040, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 7
-newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libIlmImf-2_5.so.25", O_RDONLY|O_CLOEXEC) = 7
 read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \0\3\0\0\0\0\0"..., 832) = 832
 newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=2955704, ...}, AT_EMPTY_PATH) = 0
@@ -1934,7 +1935,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/matting-levin.so", O_RDONLY
 read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=47248, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 7
-newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libumfpack.so.5", O_RDONLY|O_CLOEXEC) = 7
 read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=698840, ...}, AT_EMPTY_PATH) = 0
@@ -1971,7 +1972,7 @@ newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=2989432, ...}, AT_EMPTY_PATH) =
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libquadmath.so.0", O_RDONLY|O_CLOEXEC) = 7
 read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=289592, ...}, AT_EMPTY_PATH) = 0
-newfstatat(0, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+newfstatat(0, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x4), ...}, AT_EMPTY_PATH) = 0
 newfstatat(1, "", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}, AT_EMPTY_PATH) = 0
 newfstatat(2, "", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}, AT_EMPTY_PATH) = 0
 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/seamless-clone.so", {st_mode=S_IFREG|0644, st_size=26768, ...}, 0) = 0
@@ -1979,7 +1980,7 @@ openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gegl-0.4/seamless-clone.so", O_RDONL
 read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=26768, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 7
-newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=69115, ...}, AT_EMPTY_PATH) = 0
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=69271, ...}, AT_EMPTY_PATH) = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgegl-sc-0.4.so", O_RDONLY|O_CLOEXEC) = 7
 read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
 newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=108688, ...}, AT_EMPTY_PATH) = 0
@@ -5921,14 +5922,14 @@ openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/colorrc", O_RDONLY) = 7
 newfstatat(7, "", {st_mode=S_IFREG|0664, st_size=103, ...}, AT_EMPTY_PATH) = 0
 access("/etc/fonts/fonts.conf", R_OK)   = 0
 access("/etc/fonts/fonts.conf", R_OK)   = 0
-readlink("/etc/fonts/fonts.conf", 0x7ffc489a56c0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/fonts.conf", 0x7fff78c667e0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/fonts.conf", {st_mode=S_IFREG|0644, st_size=2808, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/fonts.conf", O_RDONLY|O_CLOEXEC) = 7
 read(7, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 2808
 read(7, "", 8192)                       = 0
 access("/etc/fonts/conf.d", R_OK)       = 0
 access("/etc/fonts/conf.d", R_OK)       = 0
-readlink("/etc/fonts/conf.d", 0x7ffc4899efc0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.d", 0x7fff78c600e0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
 newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
@@ -6059,12 +6060,12 @@ newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/50-user.conf", {st_mode=S_IFREG|0644
 openat(AT_FDCWD, "/etc/fonts/conf.avail/50-user.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 911
 read(8, "", 8192)                       = 0
-newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/conf.d", 0x7ffc48994830, 0) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/conf.d", 0x7ffc48994830, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/conf.d", 0x7fff78c55950, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/conf.d", 0x7fff78c55950, 0) = -1 ENOENT (No such file or directory)
 access("/home/daria/.config/fontconfig/conf.d", R_OK) = -1 ENOENT (No such file or directory)
 access("/home/daria/.config/fontconfig/conf.d", R_OK) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/fonts.conf", 0x7ffc48994830, 0) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/fonts.conf", 0x7ffc48994830, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/fonts.conf", 0x7fff78c55950, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/fonts.conf", 0x7fff78c55950, 0) = -1 ENOENT (No such file or directory)
 access("/home/daria/.config/fontconfig/fonts.conf", R_OK) = -1 ENOENT (No such file or directory)
 access("/home/daria/.config/fontconfig/fonts.conf", R_OK) = -1 ENOENT (No such file or directory)
 access("/home/daria/.fonts.conf.d", R_OK) = -1 ENOENT (No such file or directory)
@@ -6388,7 +6389,7 @@ read(8, ">Badr</family>\n\t\t\t<family>Zar</f"..., 8192) = 2101
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.d/65-khmer.conf", R_OK) = 0
 access("/etc/fonts/conf.d/65-khmer.conf", R_OK) = 0
-readlink("/etc/fonts/conf.d/65-khmer.conf", 0x7ffc48999e80, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.d/65-khmer.conf", 0x7fff78c5afa0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.d/65-khmer.conf", {st_mode=S_IFREG|0644, st_size=428, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.d/65-khmer.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 428
@@ -6599,332 +6600,332 @@ read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.d", R_OK)       = 0
 access("/etc/fonts/conf.avail", R_OK)   = 0
 access("/etc/fonts/conf.avail", R_OK)   = 0
-readlink("/etc/fonts/conf.avail", 0x7ffc489a56c0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail", 0x7fff78c667e0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
 newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
 access("/etc/fonts/conf.avail/10-antialias.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-antialias.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-antialias.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-antialias.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/10-autohint.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-autohint.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-autohint.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-autohint.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-autohint.conf", {st_mode=S_IFREG|0644, st_size=706, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-autohint.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 706
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-hinting-full.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-hinting-full.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-hinting-full.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-hinting-full.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-full.conf", {st_mode=S_IFREG|0644, st_size=692, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-full.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 692
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-hinting-medium.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-hinting-medium.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-hinting-medium.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-hinting-medium.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-medium.conf", {st_mode=S_IFREG|0644, st_size=696, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-medium.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 696
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-hinting-none.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-hinting-none.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-hinting-none.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-hinting-none.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-none.conf", {st_mode=S_IFREG|0644, st_size=692, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-none.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 692
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-hinting-slight.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-hinting-slight.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-hinting-slight.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-hinting-slight.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/10-no-sub-pixel.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-no-sub-pixel.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-no-sub-pixel.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-no-sub-pixel.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-no-sub-pixel.conf", {st_mode=S_IFREG|0644, st_size=723, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-no-sub-pixel.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 723
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-scale-bitmap-fonts.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-scale-bitmap-fonts.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-scale-bitmap-fonts.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-scale-bitmap-fonts.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", {st_mode=S_IFREG|0644, st_size=748, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 748
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", {st_mode=S_IFREG|0644, st_size=748, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 748
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", {st_mode=S_IFREG|0644, st_size=758, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 758
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", {st_mode=S_IFREG|0644, st_size=758, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 758
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-unhinted.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-unhinted.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-unhinted.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-unhinted.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-unhinted.conf", {st_mode=S_IFREG|0644, st_size=701, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-unhinted.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 701
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/11-lcdfilter-default.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/11-lcdfilter-default.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/11-lcdfilter-default.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/11-lcdfilter-default.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", {st_mode=S_IFREG|0644, st_size=768, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 768
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/11-lcdfilter-light.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/11-lcdfilter-light.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/11-lcdfilter-light.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/11-lcdfilter-light.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/11-lcdfilter-light.conf", {st_mode=S_IFREG|0644, st_size=765, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/11-lcdfilter-light.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 765
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/20-unhint-small-vera.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/20-unhint-small-vera.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/20-unhint-small-vera.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/20-unhint-small-vera.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/25-unhint-nonlatin.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/25-unhint-nonlatin.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/25-unhint-nonlatin.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/25-unhint-nonlatin.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/25-unhint-nonlatin.conf", {st_mode=S_IFREG|0644, st_size=3489, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/25-unhint-nonlatin.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 3489
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/30-droid-noto-mono.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/30-droid-noto-mono.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/30-droid-noto-mono.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/30-droid-noto-mono.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/30-droid-noto-mono.conf", {st_mode=S_IFREG|0644, st_size=218, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/30-droid-noto-mono.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 218
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/30-metric-aliases.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/30-metric-aliases.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/30-metric-aliases.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/30-metric-aliases.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/40-nonlatin.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/40-nonlatin.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/40-nonlatin.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/40-nonlatin.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/45-generic.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/45-generic.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/45-generic.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/45-generic.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/45-latin.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/45-latin.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/45-latin.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/45-latin.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/49-sansserif.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/49-sansserif.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/49-sansserif.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/49-sansserif.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/50-user.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/50-user.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/50-user.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/50-user.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/51-local.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/51-local.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/51-local.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/51-local.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", {st_mode=S_IFREG|0644, st_size=943, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 943
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/57-dejavu-sans-mono.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/57-dejavu-sans-mono.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/57-dejavu-sans-mono.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/57-dejavu-sans-mono.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/57-dejavu-sans.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/57-dejavu-sans.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/57-dejavu-sans.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/57-dejavu-sans.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/57-dejavu-serif.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/57-dejavu-serif.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/57-dejavu-serif.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/57-dejavu-serif.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/59-lohit-devanagari.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/59-lohit-devanagari.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/59-lohit-devanagari.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/59-lohit-devanagari.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/60-generic.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/60-generic.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/60-generic.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/60-generic.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/60-latin.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/60-latin.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/60-latin.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/60-latin.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-beng-extra.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-beng-extra.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-beng-extra.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-beng-extra.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-deva-extra.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-deva-extra.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-deva-extra.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-deva-extra.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-gubbi.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-gubbi.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-gubbi.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-gubbi.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-gujr-extra.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-gujr-extra.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-gujr-extra.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-gujr-extra.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-guru-extra.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-guru-extra.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-guru-extra.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-guru-extra.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-orya-extra.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-orya-extra.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-orya-extra.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-orya-extra.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-pagul.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-pagul.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-pagul.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-pagul.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-telu-extra.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-telu-extra.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-telu-extra.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-telu-extra.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-smc-meera.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-smc-meera.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-smc-meera.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-smc-meera.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-smc-rachana.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-smc-rachana.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-smc-rachana.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-smc-rachana.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-droid-sans-fallback.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-droid-sans-fallback.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-droid-sans-fallback.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-droid-sans-fallback.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-fonts-persian.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-fonts-persian.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-fonts-persian.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-fonts-persian.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-khmer.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-khmer.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-khmer.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-khmer.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/65-khmer.conf", {st_mode=S_IFREG|0644, st_size=464, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/65-khmer.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 464
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/65-nonlatin.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-nonlatin.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-nonlatin.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-nonlatin.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-assamese.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-assamese.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-assamese.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-assamese.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-bengali.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-bengali.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-bengali.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-bengali.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-devanagari.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-devanagari.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-devanagari.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-devanagari.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-gujarati.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-gujarati.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-gujarati.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-gujarati.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-gurmukhi.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-gurmukhi.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-gurmukhi.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-gurmukhi.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-kannada.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-kannada.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-kannada.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-kannada.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-odia.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-odia.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-odia.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-odia.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-tamil-classical.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-tamil-classical.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-tamil-classical.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-tamil-classical.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-tamil.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-tamil.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-tamil.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-tamil.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-telugu.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-telugu.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-telugu.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-telugu.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-fonts-smc-manjari.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-fonts-smc-manjari.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-fonts-smc-manjari.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-fonts-smc-manjari.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-lohit-malayalam.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-lohit-malayalam.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-lohit-malayalam.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-lohit-malayalam.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/67-lohit-malayalam.conf", {st_mode=S_IFREG|0644, st_size=643, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/67-lohit-malayalam.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\" encoding=\"UT"..., 8192) = 643
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/67-smc-anjalioldlipi.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-anjalioldlipi.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-anjalioldlipi.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-anjalioldlipi.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-smc-chilanka.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-chilanka.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-chilanka.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-chilanka.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-smc-dyuthi.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-dyuthi.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-dyuthi.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-dyuthi.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-smc-karumbi.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-karumbi.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-karumbi.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-karumbi.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-smc-keraleeyam.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-keraleeyam.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-keraleeyam.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-keraleeyam.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-smc-raghumalayalamsans.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-raghumalayalamsans.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-raghumalayalamsans.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-raghumalayalamsans.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-smc-suruma.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-suruma.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-suruma.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-suruma.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-smc-uroob.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-uroob.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-uroob.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-uroob.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/69-unifont.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/69-unifont.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/69-unifont.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/69-unifont.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/70-force-bitmaps.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/70-force-bitmaps.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/70-force-bitmaps.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/70-force-bitmaps.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/70-force-bitmaps.conf", {st_mode=S_IFREG|0644, st_size=487, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/70-force-bitmaps.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 487
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/70-no-bitmaps.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/70-no-bitmaps.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/70-no-bitmaps.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/70-no-bitmaps.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/70-yes-bitmaps.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/70-yes-bitmaps.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/70-yes-bitmaps.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/70-yes-bitmaps.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/70-yes-bitmaps.conf", {st_mode=S_IFREG|0644, st_size=77, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/70-yes-bitmaps.conf", O_RDONLY|O_CLOEXEC) = 8
 read(8, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 77
 read(8, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/80-delicious.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/80-delicious.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/80-delicious.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/80-delicious.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/90-synthetic.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/90-synthetic.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/90-synthetic.conf", 0x7ffc489a0580, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/90-synthetic.conf", 0x7fff78c616a0, 4095) = -1 EINVAL (Invalid argument)
 access("/home/daria/.config/GIMP/2.10/fonts.conf", R_OK) = -1 ENOENT (No such file or directory)
 access("/etc/gimp/2.0/fonts.conf", R_OK) = -1 ENOENT (No such file or directory)
 mkdir("/home/daria/.config/GIMP/2.10/fonts", 0777) = -1 EEXIST (File exists)
@@ -8220,6 +8221,7 @@ statx(11, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_TYPE, {stx_mask=STATX_B
 read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 4\0\0\0\0\0\0"..., 4095) = 4095
 read(7, "\0\0\0\f", 4)                  = 4
 read(7, "\0\0\0\0", 4)                  = 4
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12378, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
 newfstatat(7, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
 newfstatat(10, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
 newfstatat(9, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
@@ -8228,6 +8230,7 @@ openat(AT_FDCWD, "/usr/lib/gimp/2.0/plug-ins/file-darktable/file-darktable", O_R
 statx(11, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_TYPE, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0755, stx_size=35192, ...}) = 0
 read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\3005\0\0\0\0\0\0"..., 4095) = 4095
 read(7, "\0\0\0\f", 4)                  = 4
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12379, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
 read(7, "\0\0\0\0", 4)                  = 4
 newfstatat(7, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
 newfstatat(10, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
@@ -8237,6 +8240,7 @@ openat(AT_FDCWD, "/usr/lib/gimp/2.0/plug-ins/file-rawtherapee/file-rawtherapee",
 statx(11, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_TYPE, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0755, stx_size=31096, ...}) = 0
 read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 4\0\0\0\0\0\0"..., 4095) = 4095
 read(7, "\0\0\0\0", 4)                  = 4
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12380, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
 newfstatat(7, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
 newfstatat(10, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
 newfstatat(9, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
@@ -8510,7 +8514,7 @@ read(7, "\0\0\0\23", 4)                 = 4
 read(7, "file-heif-av1-save\0", 19)     = 19
 write(10, "\0\0\0\6\0\0\0\37gimp-register-file-handl"..., 51) = 51
 read(7, "\0\0\0\0", 4)                  = 4
---- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6245, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12384, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
 newfstatat(7, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
 newfstatat(10, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
 newfstatat(9, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
@@ -8523,7 +8527,7 @@ statx(AT_FDCWD, "/home/daria/.config/GIMP/2.10", AT_STATX_SYNC_AS_STAT|AT_SYMLIN
 openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/pluginrc", O_WRONLY|O_CREAT|O_EXCL|O_CLOEXEC, 0666) = -1 EEXIST (File exists)
 openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/pluginrc", O_WRONLY|O_CREAT|O_NOFOLLOW, 0666) = 7
 statx(7, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_TYPE|STATX_MODE|STATX_NLINK|STATX_UID|STATX_GID|STATX_MTIME, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=216479, ...}) = 0
-openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/.goutputstream-M1CUP2", O_WRONLY|O_CREAT|O_EXCL, 0666) = 8
+openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/.goutputstream-JEUPP2", O_WRONLY|O_CREAT|O_EXCL, 0666) = 8
 write(8, "# GIMP pluginrc\n# \n# This file c"..., 129) = 129
 write(8, "\n", 1)                       = 1
 write(8, "(protocol-version 26)\n", 22) = 22
@@ -8649,7 +8653,7 @@ write(8, "(plug-in-def \"${gimp_plug_in_dir"..., 2716) = 2716
 write(8, "(plug-in-def \"${gimp_plug_in_dir"..., 860) = 860
 write(8, "\n", 1)                       = 1
 write(8, "# end of pluginrc\n", 18)     = 18
-rename("/home/daria/.config/GIMP/2.10/.goutputstream-M1CUP2", "/home/daria/.config/GIMP/2.10/pluginrc") = 0
+rename("/home/daria/.config/GIMP/2.10/.goutputstream-JEUPP2", "/home/daria/.config/GIMP/2.10/pluginrc") = 0
 statx(8, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_MTIME, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=216479, ...}) = 0
 openat(AT_FDCWD, "/usr/share/locale/en_US/LC_MESSAGES/gimp20-std-plug-ins.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/share/locale/en/LC_MESSAGES/gimp20-std-plug-ins.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
@@ -8663,7 +8667,7 @@ openat(AT_FDCWD, "/usr/lib/gimp/2.0/plug-ins/script-fu/script-fu", O_RDONLY) = 1
 statx(11, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_TYPE, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0755, stx_size=189008, ...}) = 0
 read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\314\0\0\0\0\0\0"..., 4095) = 4095
 write(4, "\1\0\0\0\0\0\0\0", 8)         = 8
-write(10, "\0\0\0\1\0\0\0\32\0\0\0\200\0\0\0\200\0\2\0\23\1\1\1\1\0\1\1\1\1\1\0\0"..., 136) = 136
+write(10, "\0\0\0\1\0\0\0\32\0\0\0\200\0\0\0\200\0\4\200\27\1\1\1\1\0\1\1\1\1\1\0\0"..., 136) = 136
 write(10, "\0\0\0\5\0\0\0\24extension-script-fu\0\0\0\0\0", 32) = 32
 read(4, "\2\0\0\0\0\0\0\0", 16)         = 8
 read(7, "\0\0\0\5", 4)                  = 4
@@ -12984,7 +12988,7 @@ openat(AT_FDCWD, "/usr/lib/gimp/2.0/plug-ins/script-fu/script-fu", O_RDONLY) = 1
 statx(13, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_TYPE, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0755, stx_size=189008, ...}) = 0
 read(13, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\314\0\0\0\0\0\0"..., 4095) = 4095
 write(4, "\1\0\0\0\0\0\0\0", 8)         = 8
-write(12, "\0\0\0\1\0\0\0\32\0\0\0\200\0\0\0\200\0\2\0\23\1\1\1\1\0\1\1\1\1\1\0\0"..., 136) = 136
+write(12, "\0\0\0\1\0\0\0\32\0\0\0\200\0\0\0\200\0\4\200\27\1\1\1\1\0\1\1\1\1\1\0\0"..., 136) = 136
 write(12, "\0\0\0\5\0\0\0\27plug-in-script-fu-eval\0\0"..., 440) = 440
 read(4, "\2\0\0\0\0\0\0\0", 16)         = 8
 read(8, "\0\0\0\5", 4)                  = 4
@@ -13164,7 +13168,7 @@ openat(AT_FDCWD, "/usr/lib/gimp/2.0/plug-ins/file-png/file-png", O_RDONLY) = 15
 statx(15, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_TYPE, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0755, stx_size=59768, ...}) = 0
 read(15, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0Pi\0\0\0\0\0\0"..., 4095) = 4095
 write(4, "\1\0\0\0\0\0\0\0", 8)         = 8
-write(14, "\0\0\0\1\0\0\0\32\0\0\0\200\0\0\0\200\0\2\0\23\1\1\1\1\0\1\1\1\1\1\0\0"..., 136) = 136
+write(14, "\0\0\0\1\0\0\0\32\0\0\0\200\0\0\0\200\0\4\200\27\1\1\1\1\0\1\1\1\1\1\0\0"..., 136) = 136
 write(14, "\0\0\0\5\0\0\0\16file-png-load\0\0\0\0\3\0\0\0\0\0\0"..., 116) = 116
 read(4, "\1\0\0\0\0\0\0\0", 16)         = 8
 read(9, "\0\0\0\5", 4)                  = 4
@@ -19327,9 +19331,9 @@ openat(AT_FDCWD, "/usr/share/locale-langpack/en_US/LC_MESSAGES/exiv2.mo", O_RDON
 openat(AT_FDCWD, "/usr/share/locale-langpack/en/LC_MESSAGES/exiv2.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
 write(14, "\0\0\0\6\0\0\0\30gimp-image-set-metadata\0"..., 44) = 44
 read(9, "\0\0\0\6", 4)                  = 4
---- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6256, si_uid=1000, si_status=0, si_utime=38, si_stime=24} ---
 read(9, "\0\0\0\16", 4)                 = 4
 read(9, "file-png-load\0", 14)          = 14
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12413, si_uid=1000, si_status=0, si_utime=17, si_stime=20} ---
 read(9, "\0\0\0\2", 4)                  = 4
 read(9, "\0\0\0\25", 4)                 = 4
 read(9, "\0\0\0\3", 4)                  = 4
@@ -19510,7 +19514,7 @@ openat(AT_FDCWD, "/usr/lib/gimp/2.0/plug-ins/file-png/file-png", O_RDONLY) = 15
 statx(15, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_TYPE, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0755, stx_size=59768, ...}) = 0
 read(15, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0Pi\0\0\0\0\0\0"..., 4095) = 4095
 write(4, "\1\0\0\0\0\0\0\0", 8)         = 8
-write(14, "\0\0\0\1\0\0\0\32\0\0\0\200\0\0\0\200\0\2\0\23\1\1\1\1\0\1\1\1\1\1\0\0"..., 136) = 136
+write(14, "\0\0\0\1\0\0\0\32\0\0\0\200\0\0\0\200\0\4\200\27\1\1\1\1\0\1\1\1\1\1\0\0"..., 136) = 136
 write(14, "\0\0\0\5\0\0\0\27file-png-save-defaults\0\0"..., 147) = 147
 read(4, "\1\0\0\0\0\0\0\0", 16)         = 8
 read(9, "\0\0\0\5", 4)                  = 4
@@ -23349,6 +23353,7 @@ read(9, "\0\0\0\1", 4)                  = 4
 read(9, "\0\0\0\25", 4)                 = 4
 read(9, "\0\0\0\3", 4)                  = 4
 write(4, "\1\0\0\0\0\0\0\0", 8)         = 8
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12425, si_uid=1000, si_status=0, si_utime=176, si_stime=28} ---
 write(4, "\1\0\0\0\0\0\0\0", 8)         = 8
 write(12, "\0\0\0\6\0\0\0\17gimp-file-save\0\0\0\0\1\0\0\0\25\0"..., 35) = 35
 read(4, "\2\0\0\0\0\0\0\0", 16)         = 8
@@ -23377,30 +23382,30 @@ read(8, "\0\0\0\1", 4)                  = 4
 read(8, "\0\0\0\0", 4)                  = 4
 read(8, "\0\0\0\0", 4)                  = 4
 write(12, "\0\0\0\0", 4)                = 4
---- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6253, si_uid=1000, si_status=0, si_utime=4, si_stime=3} ---
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12410, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
 write(4, "\1\0\0\0\0\0\0\0", 8)         = 8
 write(4, "\1\0\0\0\0\0\0\0", 8)         = 8
 write(10, "\0\0\0\0", 4)                = 4
---- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6248, si_uid=1000, si_status=0, si_utime=18, si_stime=2} ---
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12388, si_uid=1000, si_status=0, si_utime=6, si_stime=1} ---
 write(4, "\1\0\0\0\0\0\0\0", 8)         = 8
 openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/tags.xml", O_WRONLY|O_CREAT|O_EXCL|O_CLOEXEC, 0666) = -1 EEXIST (File exists)
 openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/tags.xml", O_WRONLY|O_CREAT|O_NOFOLLOW, 0666) = 7
 statx(7, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_TYPE|STATX_MODE|STATX_NLINK|STATX_UID|STATX_GID|STATX_MTIME, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=61674, ...}) = 0
-openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/.goutputstream-TXTKP2", O_WRONLY|O_CREAT|O_EXCL, 0666) = 9
+openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/.goutputstream-3K9RP2", O_WRONLY|O_CREAT|O_EXCL, 0666) = 9
 write(9, "<?xml version='1.0' encoding='UT"..., 61674) = 61674
-rename("/home/daria/.config/GIMP/2.10/.goutputstream-TXTKP2", "/home/daria/.config/GIMP/2.10/tags.xml") = 0
+rename("/home/daria/.config/GIMP/2.10/.goutputstream-3K9RP2", "/home/daria/.config/GIMP/2.10/tags.xml") = 0
 statx(9, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_MTIME, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=61674, ...}) = 0
 statx(AT_FDCWD, "/home/daria/.config/GIMP/2.10/gradients", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW|AT_NO_AUTOMOUNT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
 access("/etc/fonts/fonts.conf", R_OK)   = 0
 access("/etc/fonts/fonts.conf", R_OK)   = 0
-readlink("/etc/fonts/fonts.conf", 0x7ffc489a4d10, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/fonts.conf", 0x7fff78c65e30, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/fonts.conf", {st_mode=S_IFREG|0644, st_size=2808, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/fonts.conf", O_RDONLY|O_CLOEXEC) = 7
 read(7, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 2808
 read(7, "", 8192)                       = 0
 access("/etc/fonts/conf.d", R_OK)       = 0
 access("/etc/fonts/conf.d", R_OK)       = 0
-readlink("/etc/fonts/conf.d", 0x7ffc4899e610, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.d", 0x7fff78c5f730, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
 newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
@@ -23531,12 +23536,12 @@ newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/50-user.conf", {st_mode=S_IFREG|0644
 openat(AT_FDCWD, "/etc/fonts/conf.avail/50-user.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 911
 read(9, "", 8192)                       = 0
-newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/conf.d", 0x7ffc48993e80, 0) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/conf.d", 0x7ffc48993e80, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/conf.d", 0x7fff78c54fa0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/conf.d", 0x7fff78c54fa0, 0) = -1 ENOENT (No such file or directory)
 access("/home/daria/.config/fontconfig/conf.d", R_OK) = -1 ENOENT (No such file or directory)
 access("/home/daria/.config/fontconfig/conf.d", R_OK) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/fonts.conf", 0x7ffc48993e80, 0) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/fonts.conf", 0x7ffc48993e80, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/fonts.conf", 0x7fff78c54fa0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/daria/.config/fontconfig/fonts.conf", 0x7fff78c54fa0, 0) = -1 ENOENT (No such file or directory)
 access("/home/daria/.config/fontconfig/fonts.conf", R_OK) = -1 ENOENT (No such file or directory)
 access("/home/daria/.config/fontconfig/fonts.conf", R_OK) = -1 ENOENT (No such file or directory)
 access("/home/daria/.fonts.conf.d", R_OK) = -1 ENOENT (No such file or directory)
@@ -23860,7 +23865,7 @@ read(9, ">Badr</family>\n\t\t\t<family>Zar</f"..., 8192) = 2101
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.d/65-khmer.conf", R_OK) = 0
 access("/etc/fonts/conf.d/65-khmer.conf", R_OK) = 0
-readlink("/etc/fonts/conf.d/65-khmer.conf", 0x7ffc489994d0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.d/65-khmer.conf", 0x7fff78c5a5f0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.d/65-khmer.conf", {st_mode=S_IFREG|0644, st_size=428, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.d/65-khmer.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 428
@@ -24071,332 +24076,332 @@ read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.d", R_OK)       = 0
 access("/etc/fonts/conf.avail", R_OK)   = 0
 access("/etc/fonts/conf.avail", R_OK)   = 0
-readlink("/etc/fonts/conf.avail", 0x7ffc489a4d10, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail", 0x7fff78c65e30, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
 newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
 access("/etc/fonts/conf.avail/10-antialias.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-antialias.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-antialias.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-antialias.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/10-autohint.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-autohint.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-autohint.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-autohint.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-autohint.conf", {st_mode=S_IFREG|0644, st_size=706, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-autohint.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 706
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-hinting-full.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-hinting-full.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-hinting-full.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-hinting-full.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-full.conf", {st_mode=S_IFREG|0644, st_size=692, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-full.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 692
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-hinting-medium.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-hinting-medium.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-hinting-medium.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-hinting-medium.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-medium.conf", {st_mode=S_IFREG|0644, st_size=696, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-medium.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 696
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-hinting-none.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-hinting-none.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-hinting-none.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-hinting-none.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-none.conf", {st_mode=S_IFREG|0644, st_size=692, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-none.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 692
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-hinting-slight.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-hinting-slight.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-hinting-slight.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-hinting-slight.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/10-no-sub-pixel.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-no-sub-pixel.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-no-sub-pixel.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-no-sub-pixel.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-no-sub-pixel.conf", {st_mode=S_IFREG|0644, st_size=723, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-no-sub-pixel.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 723
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-scale-bitmap-fonts.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-scale-bitmap-fonts.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-scale-bitmap-fonts.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-scale-bitmap-fonts.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", {st_mode=S_IFREG|0644, st_size=748, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 748
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", {st_mode=S_IFREG|0644, st_size=748, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 748
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", {st_mode=S_IFREG|0644, st_size=758, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 758
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", {st_mode=S_IFREG|0644, st_size=758, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 758
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/10-unhinted.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/10-unhinted.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/10-unhinted.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/10-unhinted.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-unhinted.conf", {st_mode=S_IFREG|0644, st_size=701, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/10-unhinted.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 701
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/11-lcdfilter-default.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/11-lcdfilter-default.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/11-lcdfilter-default.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/11-lcdfilter-default.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", {st_mode=S_IFREG|0644, st_size=768, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 768
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/11-lcdfilter-light.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/11-lcdfilter-light.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/11-lcdfilter-light.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/11-lcdfilter-light.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/11-lcdfilter-light.conf", {st_mode=S_IFREG|0644, st_size=765, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/11-lcdfilter-light.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 765
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/20-unhint-small-vera.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/20-unhint-small-vera.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/20-unhint-small-vera.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/20-unhint-small-vera.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/25-unhint-nonlatin.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/25-unhint-nonlatin.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/25-unhint-nonlatin.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/25-unhint-nonlatin.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/25-unhint-nonlatin.conf", {st_mode=S_IFREG|0644, st_size=3489, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/25-unhint-nonlatin.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 3489
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/30-droid-noto-mono.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/30-droid-noto-mono.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/30-droid-noto-mono.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/30-droid-noto-mono.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/30-droid-noto-mono.conf", {st_mode=S_IFREG|0644, st_size=218, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/30-droid-noto-mono.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 218
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/30-metric-aliases.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/30-metric-aliases.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/30-metric-aliases.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/30-metric-aliases.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/40-nonlatin.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/40-nonlatin.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/40-nonlatin.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/40-nonlatin.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/45-generic.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/45-generic.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/45-generic.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/45-generic.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/45-latin.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/45-latin.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/45-latin.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/45-latin.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/49-sansserif.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/49-sansserif.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/49-sansserif.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/49-sansserif.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/50-user.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/50-user.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/50-user.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/50-user.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/51-local.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/51-local.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/51-local.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/51-local.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", {st_mode=S_IFREG|0644, st_size=943, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 943
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/57-dejavu-sans-mono.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/57-dejavu-sans-mono.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/57-dejavu-sans-mono.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/57-dejavu-sans-mono.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/57-dejavu-sans.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/57-dejavu-sans.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/57-dejavu-sans.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/57-dejavu-sans.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/57-dejavu-serif.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/57-dejavu-serif.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/57-dejavu-serif.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/57-dejavu-serif.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/59-lohit-devanagari.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/59-lohit-devanagari.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/59-lohit-devanagari.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/59-lohit-devanagari.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/60-generic.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/60-generic.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/60-generic.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/60-generic.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/60-latin.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/60-latin.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/60-latin.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/60-latin.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-beng-extra.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-beng-extra.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-beng-extra.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-beng-extra.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-deva-extra.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-deva-extra.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-deva-extra.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-deva-extra.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-gubbi.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-gubbi.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-gubbi.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-gubbi.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-gujr-extra.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-gujr-extra.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-gujr-extra.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-gujr-extra.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-guru-extra.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-guru-extra.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-guru-extra.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-guru-extra.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-orya-extra.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-orya-extra.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-orya-extra.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-orya-extra.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-pagul.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-pagul.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-pagul.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-pagul.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-fonts-telu-extra.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-fonts-telu-extra.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-fonts-telu-extra.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-fonts-telu-extra.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-smc-meera.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-smc-meera.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-smc-meera.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-smc-meera.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-0-smc-rachana.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-0-smc-rachana.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-0-smc-rachana.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-0-smc-rachana.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-droid-sans-fallback.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-droid-sans-fallback.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-droid-sans-fallback.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-droid-sans-fallback.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-fonts-persian.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-fonts-persian.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-fonts-persian.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-fonts-persian.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/65-khmer.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-khmer.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-khmer.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-khmer.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/65-khmer.conf", {st_mode=S_IFREG|0644, st_size=464, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/65-khmer.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 464
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/65-nonlatin.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/65-nonlatin.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/65-nonlatin.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/65-nonlatin.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-assamese.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-assamese.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-assamese.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-assamese.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-bengali.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-bengali.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-bengali.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-bengali.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-devanagari.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-devanagari.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-devanagari.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-devanagari.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-gujarati.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-gujarati.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-gujarati.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-gujarati.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-gurmukhi.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-gurmukhi.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-gurmukhi.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-gurmukhi.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-kannada.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-kannada.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-kannada.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-kannada.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-odia.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-odia.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-odia.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-odia.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-tamil-classical.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-tamil-classical.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-tamil-classical.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-tamil-classical.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-tamil.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-tamil.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-tamil.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-tamil.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/66-lohit-telugu.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/66-lohit-telugu.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/66-lohit-telugu.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/66-lohit-telugu.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-fonts-smc-manjari.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-fonts-smc-manjari.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-fonts-smc-manjari.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-fonts-smc-manjari.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-lohit-malayalam.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-lohit-malayalam.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-lohit-malayalam.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-lohit-malayalam.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/67-lohit-malayalam.conf", {st_mode=S_IFREG|0644, st_size=643, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/67-lohit-malayalam.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\" encoding=\"UT"..., 8192) = 643
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/67-smc-anjalioldlipi.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-anjalioldlipi.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-anjalioldlipi.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-anjalioldlipi.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-smc-chilanka.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-chilanka.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-chilanka.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-chilanka.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-smc-dyuthi.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-dyuthi.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-dyuthi.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-dyuthi.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-smc-karumbi.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-karumbi.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-karumbi.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-karumbi.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-smc-keraleeyam.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-keraleeyam.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-keraleeyam.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-keraleeyam.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-smc-raghumalayalamsans.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-raghumalayalamsans.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-raghumalayalamsans.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-raghumalayalamsans.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-smc-suruma.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-suruma.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-suruma.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-suruma.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/67-smc-uroob.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/67-smc-uroob.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/67-smc-uroob.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/67-smc-uroob.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/69-unifont.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/69-unifont.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/69-unifont.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/69-unifont.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/70-force-bitmaps.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/70-force-bitmaps.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/70-force-bitmaps.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/70-force-bitmaps.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/70-force-bitmaps.conf", {st_mode=S_IFREG|0644, st_size=487, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/70-force-bitmaps.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 487
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/70-no-bitmaps.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/70-no-bitmaps.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/70-no-bitmaps.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/70-no-bitmaps.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/70-yes-bitmaps.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/70-yes-bitmaps.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/70-yes-bitmaps.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/70-yes-bitmaps.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/70-yes-bitmaps.conf", {st_mode=S_IFREG|0644, st_size=77, ...}, 0) = 0
 openat(AT_FDCWD, "/etc/fonts/conf.avail/70-yes-bitmaps.conf", O_RDONLY|O_CLOEXEC) = 9
 read(9, "<?xml version=\"1.0\"?>\n<!DOCTYPE "..., 8192) = 77
 read(9, "", 8192)                       = 0
 access("/etc/fonts/conf.avail/80-delicious.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/80-delicious.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/80-delicious.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/80-delicious.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/etc/fonts/conf.avail/90-synthetic.conf", R_OK) = 0
 access("/etc/fonts/conf.avail/90-synthetic.conf", R_OK) = 0
-readlink("/etc/fonts/conf.avail/90-synthetic.conf", 0x7ffc4899fbd0, 4095) = -1 EINVAL (Invalid argument)
+readlink("/etc/fonts/conf.avail/90-synthetic.conf", 0x7fff78c60cf0, 4095) = -1 EINVAL (Invalid argument)
 access("/usr/share/fonts/.uuid", F_OK)  = 0
 openat(AT_FDCWD, "/usr/share/fonts/.uuid", O_RDONLY|O_CLOEXEC) = 7
 read(7, "c40cf32c-f674-4f25-9fbf-500f08ff"..., 36) = 36
@@ -24414,15 +24419,15 @@ openat(AT_FDCWD, "/var/cache/fontconfig/2c0f5bec-f84d-4c1a-9d0b-316593bb32fc-le6
 newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=104, ...}, AT_EMPTY_PATH) = 0
 read(7, "\4\374\2\374\7\0\0\0h\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\0\0\0\0\0\0\0"..., 104) = 104
 access("/home/daria/.local/share/fonts/.uuid", F_OK) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/home/daria/.local/share/fonts", 0x7ffc489a5ba0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/daria/.local/share/fonts", 0x7fff78c66cc0, 0) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/home/daria/.local/share/fonts/.uuid", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/home/daria/.local/share/fonts", 0x7ffc489a5af0, 0) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/home/daria/.local/share/fonts", 0x7ffc489a5bb0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/daria/.local/share/fonts", 0x7fff78c66c10, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/daria/.local/share/fonts", 0x7fff78c66cd0, 0) = -1 ENOENT (No such file or directory)
 access("/home/daria/.fonts/.uuid", F_OK) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/home/daria/.fonts", 0x7ffc489a5ba0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/daria/.fonts", 0x7fff78c66cc0, 0) = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/home/daria/.fonts/.uuid", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/home/daria/.fonts", 0x7ffc489a5af0, 0) = -1 ENOENT (No such file or directory)
-newfstatat(AT_FDCWD, "/home/daria/.fonts", 0x7ffc489a5bb0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/daria/.fonts", 0x7fff78c66c10, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/daria/.fonts", 0x7fff78c66cd0, 0) = -1 ENOENT (No such file or directory)
 access("/usr/share/fonts/X11/.uuid", F_OK) = 0
 openat(AT_FDCWD, "/usr/share/fonts/X11/.uuid", O_RDONLY|O_CLOEXEC) = 7
 read(7, "220dc14a-f254-4e2e-a620-ebb6eb90"..., 36) = 36
@@ -24923,19 +24928,19 @@ statx(AT_FDCWD, "/home/daria/.config/GIMP/2.10", AT_STATX_SYNC_AS_STAT|AT_SYMLIN
 openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/colorrc", O_WRONLY|O_CREAT|O_EXCL|O_CLOEXEC, 0666) = -1 EEXIST (File exists)
 openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/colorrc", O_WRONLY|O_CREAT|O_NOFOLLOW, 0666) = 7
 statx(7, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_TYPE|STATX_MODE|STATX_NLINK|STATX_UID|STATX_GID|STATX_MTIME, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=103, ...}) = 0
-openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/.goutputstream-2NIJP2", O_WRONLY|O_CREAT|O_EXCL, 0666) = 9
+openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/.goutputstream-YNCIP2", O_WRONLY|O_CREAT|O_EXCL, 0666) = 9
 write(9, "# GIMP colorrc\n# \n# This file ho"..., 68) = 68
 write(9, "\n", 1)                       = 1
 write(9, "(color-history)\n", 16)       = 16
 write(9, "\n", 1)                       = 1
 write(9, "# end of colorrc\n", 17)      = 17
-rename("/home/daria/.config/GIMP/2.10/.goutputstream-2NIJP2", "/home/daria/.config/GIMP/2.10/colorrc") = 0
+rename("/home/daria/.config/GIMP/2.10/.goutputstream-YNCIP2", "/home/daria/.config/GIMP/2.10/colorrc") = 0
 statx(9, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_MTIME, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=103, ...}) = 0
 statx(AT_FDCWD, "/home/daria/.config/GIMP/2.10", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW|AT_NO_AUTOMOUNT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
 openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/templaterc", O_WRONLY|O_CREAT|O_EXCL|O_CLOEXEC, 0666) = -1 EEXIST (File exists)
 openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/templaterc", O_WRONLY|O_CREAT|O_NOFOLLOW, 0666) = 7
 statx(7, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_TYPE|STATX_MODE|STATX_NLINK|STATX_UID|STATX_GID|STATX_MTIME, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=12205, ...}) = 0
-openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/.goutputstream-Y7UIP2", O_WRONLY|O_CREAT|O_EXCL, 0666) = 9
+openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/.goutputstream-FRXSP2", O_WRONLY|O_CREAT|O_EXCL, 0666) = 9
 write(9, "# GIMP templaterc\n# \n# This file"..., 80) = 80
 write(9, "\n", 1)                       = 1
 write(9, "(GimpTemplate \"A0 (300 ppi)\"\n   "..., 284) = 284
@@ -24979,24 +24984,24 @@ write(9, "(GimpTemplate \"Samsung Galaxy S5"..., 322) = 322
 write(9, "(GimpTemplate \"Samsung Galaxy Ta"..., 336) = 336
 write(9, "\n", 1)                       = 1
 write(9, "# end of templaterc\n", 20)   = 20
-rename("/home/daria/.config/GIMP/2.10/.goutputstream-Y7UIP2", "/home/daria/.config/GIMP/2.10/templaterc") = 0
+rename("/home/daria/.config/GIMP/2.10/.goutputstream-FRXSP2", "/home/daria/.config/GIMP/2.10/templaterc") = 0
 statx(9, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_MTIME, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=12205, ...}) = 0
 statx(AT_FDCWD, "/home/daria/.config/GIMP/2.10", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW|AT_NO_AUTOMOUNT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
 openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/parasiterc", O_WRONLY|O_CREAT|O_EXCL|O_CLOEXEC, 0666) = -1 EEXIST (File exists)
 openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/parasiterc", O_WRONLY|O_CREAT|O_NOFOLLOW, 0666) = 7
 statx(7, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_TYPE|STATX_MODE|STATX_NLINK|STATX_UID|STATX_GID|STATX_MTIME, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=102, ...}) = 0
-openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/.goutputstream-XSNQP2", O_WRONLY|O_CREAT|O_EXCL, 0666) = 9
+openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/.goutputstream-WMTRP2", O_WRONLY|O_CREAT|O_EXCL, 0666) = 9
 write(9, "# GIMP parasiterc\n# \n# This file"..., 80) = 80
 write(9, "\n", 1)                       = 1
 write(9, "\n", 1)                       = 1
 write(9, "# end of parasiterc\n", 20)   = 20
-rename("/home/daria/.config/GIMP/2.10/.goutputstream-XSNQP2", "/home/daria/.config/GIMP/2.10/parasiterc") = 0
+rename("/home/daria/.config/GIMP/2.10/.goutputstream-WMTRP2", "/home/daria/.config/GIMP/2.10/parasiterc") = 0
 statx(9, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_MTIME, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=102, ...}) = 0
 statx(AT_FDCWD, "/home/daria/.config/GIMP/2.10", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW|AT_NO_AUTOMOUNT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
 openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/unitrc", O_WRONLY|O_CREAT|O_EXCL|O_CLOEXEC, 0666) = -1 EEXIST (File exists)
 openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/unitrc", O_WRONLY|O_CREAT|O_NOFOLLOW, 0666) = 7
 statx(7, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_TYPE|STATX_MODE|STATX_NLINK|STATX_UID|STATX_GID|STATX_MTIME, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=1217, ...}) = 0
-openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/.goutputstream-HHWSP2", O_WRONLY|O_CREAT|O_EXCL, 0666) = 9
+openat(AT_FDCWD, "/home/daria/.config/GIMP/2.10/.goutputstream-VFGRP2", O_WRONLY|O_CREAT|O_EXCL, 0666) = 9
 write(9, "# GIMP units\n# \n# This file cont"..., 237) = 237
 write(9, "\n", 1)                       = 1
 write(9, "(unit-info \"centimeters\"\n    (fa"..., 156) = 156
@@ -25007,15 +25012,15 @@ write(9, "(unit-info \"typogr. points\"\n    "..., 181) = 181
 write(9, "(unit-info \"typogr. picas\"\n    ("..., 166) = 166
 write(9, "\n", 1)                       = 1
 write(9, "# end of units\n", 15)        = 15
-rename("/home/daria/.config/GIMP/2.10/.goutputstream-HHWSP2", "/home/daria/.config/GIMP/2.10/unitrc") = 0
+rename("/home/daria/.config/GIMP/2.10/.goutputstream-VFGRP2", "/home/daria/.config/GIMP/2.10/unitrc") = 0
 statx(9, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_MTIME, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=1217, ...}) = 0
 write(2, "gimp: GEGL-WARNING: (../gegl/buf"..., 149) = 149
-newfstatat(AT_FDCWD, "/home/daria/.cache/babl/babl-fishes", {st_mode=S_IFREG|0664, st_size=7805, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/daria/.cache/babl/babl-fishes", {st_mode=S_IFREG|0664, st_size=7973, ...}, 0) = 0
 openat(AT_FDCWD, "/home/daria/.cache/babl/babl-fishes~", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 7
 newfstatat(7, "", {st_mode=S_IFREG|0664, st_size=0, ...}, AT_EMPTY_PATH) = 0
 write(7, "#BABL_0_1_90-10-gbefaba5 BABL_PA"..., 4096) = 4096
-write(7, "G'B'A u8 to R'G'B' u8\n----\nR'G'B"..., 3709) = 3709
-newfstatat(AT_FDCWD, "/home/daria/.cache/babl/babl-fishes", {st_mode=S_IFREG|0664, st_size=7805, ...}, 0) = 0
+write(7, "B'A u8\nRGBA float\n\tpixels=0 cost"..., 3878) = 3878
+newfstatat(AT_FDCWD, "/home/daria/.cache/babl/babl-fishes", {st_mode=S_IFREG|0664, st_size=7973, ...}, 0) = 0
 rename("/home/daria/.cache/babl/babl-fishes~", "/home/daria/.cache/babl/babl-fishes") = 0
 newfstatat(1, "", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}, AT_EMPTY_PATH) = 0
 write(1, "EEEEeEeek! 5 GeglBuffers leaked\n", 32) = 32
