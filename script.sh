@@ -36,7 +36,6 @@ bwfilter() {
     gimp -i -b "$gimp_batch_commands" &> /dev/null
     local return_code=$?
 
-
     end_time=$(date +%s.%N)
     execution_time=$(echo "$end_time - $start_time" | bc)
     echo "Timpul total de executie: $execution_time secunde"
@@ -53,8 +52,16 @@ bwfilter() {
     echo "Se scriu apelurile de sistem in strace.log..."
     strace -o stracebw.log -e trace=file,read,write,openat gimp -i -b "$gimp_batch_commands" &> /dev/null
 
+    echo "Se scriu semnalele trimise si primite de aplicatie in sig.log..."
+    strace -o sigbw.log -e trace=signal gimp -i -b "$gimp_batch_commands" &> /dev/null &
+
     echo "Se scriu apelurile de biblioteci in ltrace.log..."
-    ltrace -o ltracebw.log gimp -i -b "$gimp_batch_commands" &> /dev/null
+    ltrace -o ltracebw.log -e '*' gimp -i -b "(let* (
+      (image (car (gimp-file-load RUN-NONINTERACTIVE \"$PWD/$input_file\" \"$PWD/$input_file\")))
+      (drawable (car (gimp-image-get-active-layer image))))
+     (gimp-drawable-desaturate drawable 0)
+     (gimp-file-save RUN-NONINTERACTIVE image drawable \"$PWD/$output_file\" \"$PWD/$output_file\")
+     (gimp-quit 0))" &> /dev/null
 
     created_files=$(grep -oP 'openat\(([^,]+), "[^"]+", O_WRONLY\|O_CREAT\|O_EXCL.*' stracebw.log | awk -F ', ' '{print $2}')
     echo "Fisiere create sau modificate: $created_files"
@@ -97,8 +104,16 @@ resize() {
     echo "Se scriu apelurile de sistem in strace.log..."
     strace -o stracers.log -e trace=file,read,write,openat gimp -i -b "$gimp_batch_commands" &> /dev/null
 
+    echo "Se scriu semnalele trimise si primite de aplicatie in sig.log..."
+    strace -o sigrs.log -e trace=signal gimp -i -b "$gimp_batch_commands" &> /dev/null &
+
     echo "Se scriu apelurile de biblioteci in ltrace.log..."
-    ltrace -o ltracers.log gimp -i -b "$gimp_batch_commands" &> /dev/null
+    ltrace -o ltracers.log -e '*' gimp -i -b "(let* (
+      (image (car (gimp-file-load RUN-NONINTERACTIVE \"$PWD/$input_file\" \"$PWD/$input_file\")))
+      (drawable (car (gimp-image-get-active-layer image))))
+     (gimp-image-scale image "$dim1" "$dim2")
+     (gimp-file-save RUN-NONINTERACTIVE image drawable \"$PWD/$output_file\" \"$PWD/$output_file\")
+     (gimp-quit 0))" &> /dev/null
 
     created_files=$(grep -oP 'openat\(([^,]+), "[^"]+", O_WRONLY\|O_CREAT\|O_EXCL.*' stracebw.log | awk -F ', ' '{print $2}')
     echo "Fisiere create sau modificate: $created_files"
@@ -143,9 +158,17 @@ rotate() {
     echo "Se scriu apelurile de sistem în strace.log..."
     strace -o stracerot.log -e trace=file,read,write,openat gimp -i -b "$gimp_batch_commands" &> /dev/null
 
-    echo "Se scriu apelurile de biblioteci în ltrace.log..."
-    ltrace -o ltracerot.log gimp -i -b "$gimp_batch_commands" &> /dev/null
+    echo "Se scriu semnalele trimise si primite de aplicatie in sig.log..."
+    strace -o sigrot.log -e trace=signal gimp -i -b "$gimp_batch_commands" &> /dev/null &
 
+    echo "Se scriu apelurile de biblioteci în ltrace.log..."
+    ltrace -o ltracerot.log -e '*' gimp -i -b "(let* (
+      (pi 3.141592653589793)
+      (image (car (gimp-file-load RUN-NONINTERACTIVE \"$PWD/$input_file\" \"$PWD/$input_file\")))
+      (drawable (car (gimp-image-get-active-layer image))))
+     (gimp-item-transform-rotate drawable (* "$dir" (/ pi 180.0)) TRUE (/ (car (gimp-drawable-width drawable)) 2) (/ (car (gimp-drawable-height drawable)) 2))
+     (gimp-file-save RUN-NONINTERACTIVE image drawable \"$PWD/$output_file\" \"$PWD/$output_file\")
+     (gimp-quit 0))" &> /dev/null
     created_files=$(grep -oP 'openat\(([^,]+), "[^"]+", O_WRONLY\|O_CREAT\|O_EXCL.*' stracebw.log | awk -F ', ' '{print $2}')
     echo "Fisiere create sau modificate: $created_files"
 
@@ -178,9 +201,16 @@ add_text(){
     echo "Se scriu apelurile de sistem în strace.log..."
     strace -o stracetxt.log -e trace=file,read,write,openat gimp -i -b "$gimp_batch_commands" &> /dev/null
 
-    echo "Se scriu apelurile de biblioteci în ltrace.log..."
-    ltrace -o ltracetxt.log gimp -i -b "$gimp_batch_commands" &> /dev/null
+    echo "Se scriu semnalele trimise si primite de aplicatie in sig.log..."
+    strace -o sigtxt.log -e trace=signal gimp -i -b "$gimp_batch_commands" &> /dev/null &
 
+    echo "Se scriu apelurile de biblioteci în ltrace.log..."
+    ltrace -o ltracetxt.log -e '*' gimp -i -b "(let* (
+      (image (car (gimp-file-load RUN-NONINTERACTIVE \"$PWD/$input_file\" \"$PWD/$input_file\")))
+      (drawable (car (gimp-image-get-active-layer image))))
+     (gimp-text-fontname image drawable 5 5 \"$text\" 20 TRUE 1000 PIXELS \"Arial\")
+     (gimp-file-save RUN-NONINTERACTIVE image drawable \"$PWD/$output_file\" \"$PWD/$output_file\")
+     (gimp-quit 0))" &> /dev/null
     created_files=$(grep -oP 'openat\(([^,]+), "[^"]+", O_WRONLY\|O_CREAT\|O_EXCL.*' stracebw.log | awk -F ', ' '{print $2}')
     echo "Fisiere create sau modificate: $created_files"
 

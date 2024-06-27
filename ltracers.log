@@ -1,10 +1,19 @@
---- SIGCHLD (Child exited) ---
---- SIGCHLD (Child exited) ---
---- SIGCHLD (Child exited) ---
---- SIGCHLD (Child exited) ---
---- SIGCHLD (Child exited) ---
---- SIGCHLD (Child exited) ---
---- SIGCHLD (Child exited) ---
---- SIGCHLD (Child exited) ---
---- SIGCHLD (Child exited) ---
-+++ exited (status 0) +++
+libc.so.6->(0x7f409e9ca2e0, 0x7ffe128a9b08, 0x7ffe128a9b30, 0x563a1524a290) = 0
+libc.so.6->calloc(0, 1600)                       = 0x563a15bd8350
+libc.so.6->(0x7f409bed9640, 0x800000, 3, 0x7f409d6c8aab) = 0x7f409bed9640
+libstdc++.so.6->_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareEPKc(0x7ffe128a8e00, 0x7f409ce1da18, 256, 0 <unfinished ...>
+libstdc++.so.6->strlen("default")                = 7
+libstdc++.so.6->memcmp(0x7ffe128a8e10, 0x7f409ce1da18, 7, 2584) = 0
+<... _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareEPKc resumed> ) = 0
+libx265.so.199->pthread_mutex_init(0x7f4089893380, 0, 0x1fffffffc, 0xfffffffc) = 0
+libx265.so.199->__cxa_atexit(0x7f4088987690, 0x7f4089893380, 0x7f4089881000, 0xfffffffc) = 0
+libx265.so.199->pthread_mutex_init(0x7f408988dc40, 0, 0x1fffffffc, 0xfffffffc) = 0
+libx265.so.199->__cxa_atexit(0x7f4088987690, 0x7f408988dc40, 0x7f4089881000, 0xfffffffc) = 0
+libx265.so.199->pthread_mutex_init(0x7f4089888640, 0, 0x1fffffffc, 0xfffffffc) = 0
+libx265.so.199->__cxa_atexit(0x7f4088987690, 0x7f4089888640, 0x7f4089881000, 0xfffffffc) = 0
+libx265.so.199->pthread_mutex_destroy(0x7f4089888640, 0, 1, 0x7f409d7cbb18) = 0
+libx265.so.199->pthread_mutex_destroy(0x7f408988dc40, 0, 1, 0x7f409d7cbb18) = 0
+libx265.so.199->pthread_mutex_destroy(0x7f4089893380, 0, 1, 0x7f409d7cbb18) = 0
+libstdc++.so.6->_ZdlPv(0x563a15c950b0, 72, 1, 0x7f409d7cbb18 <unfinished ...>
+libstdc++.so.6->free(0x563a15c950b0)             = <void>
+<... _ZdlPv resumed> )                           = 0

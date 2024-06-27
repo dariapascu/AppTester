@@ -1,0 +1,51 @@
+rt_sigaction(SIGHUP, {sa_handler=0x5618a534b830, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f1a3f11a520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x5618a534b830, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f1a3f11a520}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0x5618a534b830, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f1a3f11a520}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x5618a534b830, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f1a3f11a520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGABRT, {sa_handler=0x5618a534b830, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f1a3f11a520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGBUS, {sa_handler=0x5618a534b830, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f1a3f11a520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, {sa_handler=0x5618a534b830, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f1a3f11a520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGFPE, {sa_handler=0x5618a534b830, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f1a3f11a520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f1a3f11a520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1a3f11a520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGILL, {sa_handler=0x7f1a3f837ad0, sa_mask=[ILL], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1a3f11a520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGILL, {sa_handler=SIG_DFL, sa_mask=[ILL], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1a3f11a520}, {sa_handler=0x7f1a3f837ad0, sa_mask=[ILL], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1a3f11a520}, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7f1a3f169870, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f1a3f11a520}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], ~[KILL STOP RTMIN RT_1], 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1a3f11a520}, {sa_handler=SIG_IGN, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f1a3f11a520}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1a3f11a520}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1a3f11a520}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGILL, {sa_handler=0x7f1a3fe5ef20, sa_mask=[ILL], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1a3f11a520}, {sa_handler=SIG_DFL, sa_mask=[ILL], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1a3f11a520}, 8) = 0
+rt_sigaction(SIGILL, {sa_handler=SIG_DFL, sa_mask=[ILL], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1a3f11a520}, {sa_handler=0x7f1a3fe5ef20, sa_mask=[ILL], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1a3f11a520}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6540, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6541, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6542, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6544, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6545, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6569, si_uid=1000, si_status=0, si_utime=10, si_stime=7} ---
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6563, si_uid=1000, si_status=0, si_utime=9, si_stime=0} ---
+kill(6563, SIGKILL)                     = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6547, si_uid=1000, si_status=0, si_utime=8, si_stime=1} ---
+kill(6547, SIGKILL)                     = 0
++++ exited with 0 +++
